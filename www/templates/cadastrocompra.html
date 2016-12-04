@@ -1,0 +1,31 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar bar-subheader bar-positive">
+    <h2 class="title">Cadastrar Compra</h2>
+  </ion-header-bar>
+
+  <ion-content overflow-scroll="false" >
+
+<!--     <ion-refresher pulling-text=""
+      refreshing-text="Carregando..."
+      refreshing-icon="ion-loop spin positive"
+      pulling-icon="ion-android-arrow-down positive"
+      on-refresh="doRefresh()">
+    </ion-refresher> -->
+
+    <div ng-include="template.url"></div>
+
+    <ion-list>
+      <ion-item>
+        <button class="button button-block button-balanced" ng-click="doEscanear();">Cadastrar QR Code  <i class="icon ion-qr-scanner blank"></i></button>
+      </ion-item>
+<!--       <ion-item ng-repeat="item in turmas" class="item-icon-right ani-item item-remove-animate">
+        <h6 style="font-size: 0.8em">{{item.nomediscip}}</h6>
+        <p style="font-size: 0.7em">{{item.horario}}</p>
+        <i class="icon ion-bookmark positive" ng-click="showModalDiario(item)"></i>
+      </ion-item> -->
+    </ion-list>
+
+
+  </ion-content>
+  <!-- <ion-nav-title><img id="logo" class="title-image" src="img/uniitali_logo.png" width="123" height="43" /></ion-nav-tile> -->
+</ion-view>

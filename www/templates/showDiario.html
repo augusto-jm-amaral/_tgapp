@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h5 class="title">Diários</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModalDiario()">Voltar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content overflow-scroll="false">
+    <div ng-click="reload();" ng-include="template.url"></div>
+    <ion-list>
+        <ion-item>
+          <h6 style="font-size: 0.8em">{{turmaSelecionada.nomediscip}}</h6>
+          <p style="font-size: 0.7em">{{turmaSelecionada.horario}}</p>
+        </ion-item>
+        <div ng-repeat="d in diarioModal">
+          <ion-item class="item-icon-right ani-item item-remove-animate">
+            <h6 style="font-size: 0.8em">{{d.data}}</h6>
+            <i class="icon ion-clipboard positive" ng-click="showModalListaPre(d);"></i>
+          </ion-item>
+        </div>
+      </ion-list>
+    </form>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,33 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar bar-subheader bar-positive">
+    <h2 class="title">Notificação</h2>
+  </ion-header-bar>
+
+  <ion-content class="notification-scroll notification-scroll-content" overflow-scroll="false">
+    <!-- data-wow-duration="1.5s" data-wow-delay="1s" data-wow-iteration="1" -->
+
+    <div class="card" ng-class="cssAnimationCard" ng-show="messageCard">
+      <div class="item item-divider">
+        {{notification.title}}
+      </div>
+      <div class="item item-text-wrap">
+        {{notification.message}}
+      </div>
+      <div class="item item-divider" style="font-size: 0.8em">
+        Enviado por: {{notification.additionalData.enviadopor}}
+      </div>
+    </div>
+
+    <section id="cardAnimation" class="animated flipOutY" ng-show="iconMessage">
+      <div class="row row-center" style="margin-top: 30%;">
+        <div class="col col-center">
+          <i class="icon ion-ios-email-outline larger"></i>
+        </div>
+      </div>
+    </section>
+
+
+  </ion-content>
+
+  <ion-nav-title><img id="logo" class="title-image" src="img/uniitali_logo.png" width="123" height="43" /></ion-nav-tile>
+</ion-view>

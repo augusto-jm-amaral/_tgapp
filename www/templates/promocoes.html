@@ -1,0 +1,28 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar bar-subheader bar-positive">
+    <h2 class="title">Promoções</h2>
+  </ion-header-bar>
+
+  <ion-content>
+
+      <ion-refresher pulling-text=""
+        refreshing-text="Carregando..."
+        refreshing-icon="ion-loop spin positive"
+        pulling-icon="ion-android-arrow-down positive"
+        on-refresh="doRefresh();">
+      </ion-refresher>
+
+
+    <div ng-include="template.url"></div>
+
+    <ion-list>
+      <ion-item ng-repeat="item in promocoes" class="item-icon-right ani-item item-remove-animate">
+        <h6 style="font-size: 0.8em">{{item.loja}}</h6>
+        <p style="font-size: 0.7em">{{item.data}}</p>
+        <p style="font-size: 0.7em">{{item.titulo}}</p>
+        <i class="icon ion-bag assertive" ng-click="showModal(item)"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+  <!-- <ion-nav-title><img id="logo" class="title-image" src="img/uniitali_logo.png" width="123" height="43" /></ion-nav-tile> -->
+</ion-view>

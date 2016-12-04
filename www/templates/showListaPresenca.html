@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h5 class="title">Lista de Presença</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModalListaPre()">Voltar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content overflow-scroll="false">
+      <ion-list>
+        <ion-item>
+          <h6 style="font-size: 0.8em">{{turmaSelecionada.nomediscip}}</h6>
+          <p style="font-size: 0.7em">{{turmaSelecionada.horario}}</p>
+          <h6 style="font-size: 0.7em">{{currentDiario.data}}</h6>
+        </ion-item>
+        <div ng-repeat="item in listaPreModal">
+          <ion-item  class="ani-item item-remove-animate" style="padding: 0px;">
+            <div class="row" style="padding: 0px;">
+              <div class="col col-75">
+                <h6 style="font-size: 0.8em; margin-top: 15px;">{{item.idnomeenterp}}</h6>
+              </div>
+              <div class="col col-25">
+                <button class="button button-outline button-assertive" ng-style="item.style" ng-click="clickNota(item);" >{{item.faltlistaalu}}</button>
+              </div>
+            </div>
+          </ion-item>
+        </div>
+      </ion-list>
+  </ion-content>
+</ion-modal-view>

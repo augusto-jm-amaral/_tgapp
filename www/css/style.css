@@ -1,0 +1,116 @@
+#logo{
+  margin-top: 5px;
+}
+a{
+  text-decoration: none;
+}
+/*#homecontent{
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center top;
+    background-color: white;
+}*/
+.form-login{
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.login-title{
+  width: 100%;
+  height: 50%;
+  background:url('../img/logo11.png');
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center top;
+  background-color: white;
+}
+.copy-right{
+  padding-top: 1em;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0px;
+  min-height: 100%;
+  line-height: 1em;
+  border-width: 0px;
+}
+.border-bar{
+  z-index: 8;
+  top: 0;
+  position: absolute;
+  height: 45px;
+  width: 100%;
+  background-color: #444;
+}
+.text-center{
+  text-align: center;
+}
+.larger {
+    font-size: 16em;
+}
+.medium{
+  font-size: 8em;
+}
+.notification-scroll-content {
+  display: table !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+.notification-scroll {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.col-7 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 14.28%;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 14.28%;
+    -ms-flex: 0 0 14.28%;
+    flex: 0 0 14.28%;
+    max-width: 14.28%;
+}
+
+.ball-calendar{
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin: 0 auto 0;
+  display: inline-block;
+}
+.ani-item.ng-enter {
+    -webkit-animation: fadeInLeft 1s;
+    animation: fadeInLeft 1s;
+}
+.ani-item.ng-enter-stagger {
+  -webkit-animation-delay:300ms;
+  animation-delay:300ms;
+
+  /* override to make sure it's not inherited from other styles */
+  -webkit-animation-duration:0;
+  animation-duration:0;
+}
+.scroll{
+  height: 100% !important;
+}
+#cardAnimation {
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1.5s;
+  -moz-animation-delay: 1s;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-duration: 1.5s;
+  -ms-animation-delay: 1s;
+  -ms-animation-iteration-count: 1;
+}
+/*.quizCard {
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}*/

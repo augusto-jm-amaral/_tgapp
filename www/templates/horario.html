@@ -1,0 +1,43 @@
+<ion-view>
+  <ion-header-bar align-title="center" class="bar bar-subheader bar-assertive">
+    <h2 class="title">Horario</h2>
+  </ion-header-bar>
+
+  <ion-content overflow-scroll="false">
+
+    <ion-refresher pulling-text=""
+      refreshing-text="Carregando..."
+      refreshing-icon="ion-loop spin positive"
+      pulling-icon="ion-android-arrow-down positive"
+      on-refresh="doRefresh()">
+    </ion-refresher>
+
+    <ion-list>
+
+      <div ng-include="template.url"></div>
+
+      <div ng-repeat="item in horarios"  class="ani-item item-remove-animate" ng-show="showList">
+
+        <ion-item class="item-divider item-positive">
+          <h2 class="text-center" style="color: white;">{{item.titulo}}</h4>
+        </ion-item>
+
+        <ion-item ng-repeat="h in item.rows">
+          <div class="row">
+            <div class="col col-20 text-center">
+              {{h.dthrini}}</br>
+              ás</br>
+              {{h.dthrter}}
+            </div>
+            <div class="col col-80">
+              <h4>{{h.disciplina.initCap()}}</h4>
+              <p style="text-transform: capitalize">Local: {{h.local.initCap()}}</p>
+            </div>
+          </div>
+        </ion-item>
+
+      </div>
+    </ion-list>
+  </ion-content>
+  <ion-nav-title><img id="logo" class="title-image" src="img/uniitali_logo.png" width="123" height="43" /></ion-nav-tile>
+</ion-view>

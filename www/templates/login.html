@@ -1,0 +1,37 @@
+<ion-view>
+  <ion-content>
+    <!-- <div class="login-title" ng-click="showModal()"></div> -->
+    <div class="login-title"></div>
+    <!-- <div class="login-title"></div> -->
+    <div class="form-login">
+      <form>
+        <div class="list">
+          <label class="item item-input">
+            <span class="input-label">E-mail</span>
+            <input type="text" ng-model="login.email">
+          </label>
+          <label class="item item-input">
+            <span class="input-label">Senha</span>
+            <input type="password" ng-model="login.password">
+          </label>
+<!--           <label ng-show="!showFormLogin" class="item text-center" style="font-size: 1em;">
+            <ion-spinner icon="lines" class="spinner-positive"></ion-spinner> {{percent}}%   Sincronizando o seu dispositivo
+            <i class="ion-loop spin positive" style="font-size: 30px;"></i> {{percent}}%   Sincronizando o seu dispositivo
+          </label> -->
+          <label class="item" style="padding-bottom: 8px">
+            <button class="button button-block button-positive" style="margin: 0px;" ng-click="doLogin();">Login</button>
+          </label>
+          <a class="item copy-right" href="#" ng-click="showModal();" style="font-size: 1.2em;">
+            Cadastrar - se
+          </a>
+        </div>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>
+
+<!-- <key>NSAppTransportSecurity</key>
+<disc>
+  <key>NSAllowsArbitraryLoads</key>
+  <true/>
+</disc> -->

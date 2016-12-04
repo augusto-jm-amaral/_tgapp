@@ -1,0 +1,42 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h5 class="title">Cadastre-se</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Fechar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+<!--       <ion-list>
+        <div ng-repeat="user in listUsers">
+          <ion-radio ng-click="setUser(user)">
+            <h1 style="font-size: 1em;">Nome: {{user.name}}</h1>
+            <p>ID: {{user.username}}</p>
+          </ion-radio>
+        </div>
+      </ion-list> -->
+    <!-- </form> -->
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Nome</span>
+          <input type="text" ng-model="cadastro.nome">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">E-mail</span>
+          <input type="text" ng-model="cadastro.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">CPF</span>
+          <input type="text" ng-model="cadastro.cpf">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Senha</span>
+          <input type="password" ng-model="cadastro.senha">
+        </label>
+        <label class="item" style="padding-bottom: 8px">
+          <button class="button button-block button-balanced" style="margin: 0px;" ng-click="doCadastro();">Cadastrar-se</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

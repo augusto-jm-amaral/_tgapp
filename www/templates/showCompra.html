@@ -1,0 +1,28 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h5 class="title">Detalhes</h5>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Voltar</button>
+    </div>
+  </ion-header-bar>
+  <ion-content overflow-scroll="false">
+      <ion-list>
+        <ion-item>
+          <h6 style="font-size: 0.8em">{{compra.user.empresa}}</h6>
+          <p style="font-size: 0.7em">{{compra.register | date: 'hh:mm dd/MM/yyyy'}}</p>
+          <h6 style="font-size: 0.7em">{{compra.value | currency : 'R$'}}</h6>
+        </ion-item>
+        <div ng-repeat="item in compra.produtos">
+          <ion-item  class="ani-item item-remove-animate">
+            <h6 style="font-size: 0.8em">{{item.name}}</h6>
+            <p style="font-size: 0.7em">{{item.desc}}</p>
+            <p style="font-size: 0.7em">Tipo: {{item.type}}</p>
+            <p style="font-size: 0.7em">Valor: {{item.value | currency : 'R$'}}</p>
+            <p style="font-size: 0.7em">Quantidade: {{item.qtd}}</p>
+            <p style="font-size: 0.7em">Cor: {{item.cor}}</p>
+            <p style="font-size: 0.7em">Tamanho: {{item.tamanho}}</p>
+          </ion-item>
+        </div>
+      </ion-list>
+  </ion-content>
+</ion-modal-view>

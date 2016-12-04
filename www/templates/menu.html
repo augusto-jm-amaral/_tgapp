@@ -1,0 +1,54 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+
+    <ion-nav-bar class="bar-light" align-title="center">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="appContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-stable">
+      <h1 class="title">Menu</h1>
+    </ion-header-bar>
+    <ion-content>
+      <ion-list>
+        <ion-item menu-close class="item item-thumbnail-left" ng-init="">
+          <img src="img/usuario.jpg">
+          <h2 style="white-space: normal;" >{{perfil.nome ? perfil.nome : 'Sem nome'}}</h2>
+          <!-- <p  style="white-space: normal;">{{perfil.status ? perfil.status : 'Sem status'}}</p> -->
+        </ion-item>
+        <ion-item menu-close class="item item-icon-left" href="#/app/compras">
+          <i class="icon ion-bag positive"></i>
+          Minhas Compras
+        </ion-item>
+        <ion-item menu-close class="item item-icon-left" href="#/app/promocoes">
+          <i class="icon ion-pricetags assertive"></i>
+          Promoções
+        </ion-item>
+        <ion-item menu-close class="item item-icon-left" href="#/app/cadastrocompra">
+          <i class="icon ion-qr-scanner positive"></i>
+          Cadastrar Compra
+        </ion-item>
+<!--         <ion-item menu-close class="item item-icon-left" href="#/app/horario">
+          <i class="icon ion-clock assertive"></i>
+          Horário
+        </ion-item>
+        <ion-item menu-close class="item item-icon-left" ng-click="openModle();">
+          <i class="icon ion-university positive"></i>
+          AVA
+        </ion-item> -->
+        <ion-item menu-close class="item item-icon-left" ng-click="logout()">
+          <i class="icon ion-log-out assertive"></i>
+          Sair
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
